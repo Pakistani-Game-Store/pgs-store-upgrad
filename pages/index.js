@@ -6,7 +6,7 @@ export default function Home() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("https://a7f9dd86-be2d-4675-b58a-58ea418426a5-00-35ui0v0r62kqa.sisko.replit.dev/")
+    axios.get("http://127.0.0.1:8080/products")
       .then(res => setProducts(res.data))
       .catch(err => console.error(err));
   }, []);
